@@ -1,0 +1,32 @@
+.group-table {
+	width: 100%;
+}
+
+.thead {
+	margin-right: 25%;
+}
+
+.theadGroup0 {
+	width: 20%;
+}
+
+.theadGroup1 .theadGroup2 .theadGroup3 .theadGroup4{
+	width: 20%;
+}
+
+.group-unit {
+	margin-bottom: 10px;
+}
+
+.group-table-div {
+	overflow:auto;
+	height: calc(100% - 211px);
+}
+
+.group-info {
+	height: 108px;
+}
+
+.group-info-up {
+	height: 50px;
+}

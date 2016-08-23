@@ -1,0 +1,33 @@
+.page-content {
+	margin: auto;
+	display: block;
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+	from {-webkit-transform: scale(0)} 
+	to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+	from {transform: scale(0.1)} 
+	to {transform: scale(1)}
+}
+
+.content {
+	height: 100%;
+	max-height: calc(100% - 64px);
+	overflow: hidden;
+}
+
+.display-area {
+	height: 100%;
+}
+
+.display-list {
+	overflow:auto;
+	max-height: calc(100% - 32px);
+}
