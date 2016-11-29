@@ -1,6 +1,8 @@
 #slotAircraft = <[name short type id firepower torpedo bomb air sonar scout hit evade]>
 aircrafts = [
 ["九六式艦戦"							"96艦戰"		"fighter"		"19",  0, 0, 0, 2, 0, 0, 0, 0]
+["F4F-4"									"F4F-4"			"fighter"		"197", 1, 0, 0, 4, 0, 0, 0, 2]
+["F4F-5"									"F4F-5"			"fighter"		"198", 1, 0, 0, 5, 0, 1, 1, 2]
 ["零式艦戦21型"						"零戰21型"	"fighter"		"20",  0, 0, 0, 5, 0, 0, 0, 0]
 ["零式艦戦32型"						"零戰32型"	"fighter"		"181", 0, 0, 0, 5, 0, 0, 0, 2]
 ["零式艦戦52型"						"零戰52型"	"fighter"		"21",  0, 0, 0, 6, 0, 0, 0, 0]
