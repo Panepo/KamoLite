@@ -22,7 +22,7 @@ fs.writeFileSync './raw/aircrafts.json', outAircraft
 # ===============================================================================
 # PARSE CARRIERS DATA
 # ===============================================================================
-slotCarrier = <[name type id slot1 slot2 slot3 slot4 fighter bomber torpedo scout scout2 seaplane seaplaneX heli blue big display firepower firepowerEQ]>
+slotCarrier = <[name type id slot1 slot2 slot3 slot4 fighter bomber torpedo scout scout2 seaplane seaplaneX heli blue big jetFB display firepower firepowerEQ]>
 outCarrier = []
 
 for carrier, i in carriers

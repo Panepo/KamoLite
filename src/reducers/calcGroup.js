@@ -111,7 +111,7 @@ export function calcOutputText() {
 			
 			for (var j=0; j<4; j++) {
 				if ( carrierSelected[i][searchName[j]] ) {
-					tempString = "+" + carrierSelected[i][searchFactory[j]] + " " + carrierSelected[i][searchShort[j]] + " " + listAircraftSkill2[carrierSelected[i][searchSkill[j]]]
+					tempString = "★" + carrierSelected[i][searchFactory[j]] + " " + carrierSelected[i][searchShort[j]] + " " + listAircraftSkill2[carrierSelected[i][searchSkill[j]]]
 					output[i] = output[i] + tempString + " "
 				} else {
 					output[i] = output[i] + "empty "

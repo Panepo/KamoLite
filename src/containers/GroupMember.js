@@ -69,7 +69,7 @@ class GroupMember extends Component {
 						var classTemp = "group-button mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary"
 						
 						if ( selectData[i][slotID] ) {
-							textTemp = "+" + selectData[i][slotFac] + selectData[i][slotName] + "(" + selectData[i][listCarrierTbody[j]].toString() + ")" + listAircraftSkill2[selectData[i][listCarrierTbody[j] + 'skill']]
+							textTemp = "★" + selectData[i][slotFac] + selectData[i][slotName] + "(" + selectData[i][listCarrierTbody[j]].toString() + ")" + listAircraftSkill2[selectData[i][listCarrierTbody[j] + 'skill']]
 							switch ( selectData[i][slotType] ) {
 								case listAircraft[0]:
 									classTemp = classTemp + " mdl-color--" + listAircraftColor[0] + " mdl-button--raised"

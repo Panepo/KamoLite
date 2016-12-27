@@ -12,6 +12,7 @@ export function calcSlotFirepower( aircraftId, carrierType ) {
 			output.firepower = aircraftSelect[0].firepower
 			switch ( aircraftSelect[0].type) {
 				case "bomber":
+				case "jetFB":
 					output.firepower = output.firepower + aircraftSelect[0].bomb * 1.3
 				break
 				case "torpedo":
@@ -41,6 +42,7 @@ export function calcSlotAirstrike( aircraftId, slotSize, airDamage ) {
 	switch ( aircraftSelect[0].type) {
 		case "bomber":
 		case "seaplane":
+		case "jetFB":
 			tempDam = (aircraftSelect[0].bomb * Math.sqrt(slotSize) + 25) * airDamage / 100
 			output.as1 = Math.floor( tempDam )
 			output.as2 = 0
@@ -113,6 +115,7 @@ export function calcSlotAircontrol(aircraftId, slotSize, slotSkill, slotFactory 
 			
 			break
 		case 'bomber':
+		case "jetFB":
 			acValue = Math.floor( (aircraftSelect.air + 0.25*slotFactory) * Math.sqrt(slotSize))
 			
 			switch ( slotSkill ) {
@@ -260,6 +263,7 @@ export function calcSlotText( aircraftId, aircraftType, slotSize, slotSkill, slo
 		case "torpedo":
 		case "seaplane":
 		case "seaplaneX":
+		case "jetFB":
 			tempAC = calcSlotAircontrol(aircraftId, slotSize, slotSkill, slotFactory )
 			break
 	}
@@ -267,6 +271,7 @@ export function calcSlotText( aircraftId, aircraftType, slotSize, slotSkill, slo
 		case "bomber":
 		case "torpedo":
 		case "seaplane":
+		case "jetFB":
 			tempObject = calcSlotAirstrike ( aircraftId, slotSize, 100 )
 			tempAS = tempObject.string
 			break
