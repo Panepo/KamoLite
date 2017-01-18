@@ -26,7 +26,7 @@ class GroupAircrafts extends Component {
 					onClickFunc={(modelId) => aircraftTypeChange(modelId)}
 					Cactive={"img-button mdl-button--raised mdl-button--colored"}
 					Cinactive={"img-button"}
-					imgSrc={"./image/icon/" + listAircraftS[i] + ".png"}
+					imgSrc={"http://panepo.github.io/KCData/image/icon/" + listAircraftS[i] + ".png"}
 					text={listAircraftName[i]}
 					title={listAircraft[i]} />
 			)
